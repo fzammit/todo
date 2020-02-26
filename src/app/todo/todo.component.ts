@@ -26,7 +26,7 @@ export class TodoComponent implements OnInit {
   todo: Todo;
 
   constructor(private httpClient: HttpClient) {}
-  private todoListURL = 'https://jsonplaceholder.typicode.com/todos/1';
+  private todoListURL = 'http://localhost:8000/todo/1';
 
   ngOnInit(): void {
     this.httpClient.get(this.todoListURL).subscribe(response => {
