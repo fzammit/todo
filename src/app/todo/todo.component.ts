@@ -31,6 +31,8 @@ export class TodoComponent implements OnInit {
   ngOnInit(): void {
     this.httpClient.get(this.todoListURL).subscribe(response => {
       console.log(response);
+      this.todo = new Todo(response);
+      console.log(this.todo);
     });
   }
 }

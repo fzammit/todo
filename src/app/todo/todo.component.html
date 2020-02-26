@@ -1,4 +1,16 @@
-<div *ngFor="let todo of todos">
+<h1>Todo en dur : </h1>
+<div *ngFor = "let todo of todos">
   <h2>Tâche : {{todo.title}}</h2>
-  <div><span>id: </span>{{todo.id}}</div>
+  <div><span>id: </span> {{todo.id}}</div>
+  <div><span>userId:</span>{{todo.userId}}</div>
+  <div><span>terminé: </span>{{todo.completed}}</div>
+</div>
+
+<hr>
+<h1>Todo de l'API</h1>
+<div>
+  <h2>Tâche : {{todo.title}}</h2>
+  <div><span>id: </span> {{todo.id}}</div>
+  <div><span>userId:</span>{{todo.userId}}</div>
+  <div><span>terminé: </span>{{todo.completed}}</div>
 </div>
